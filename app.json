@@ -1,0 +1,9 @@
+{
+  "apps": [
+    {
+      "name": "Sentinel Fraud Analytics",
+      "path": "web",
+      "framework": "web"
+    }
+  ]
+}
