@@ -28,6 +28,7 @@ async function flush() {
   try {
     do {
       dirty = false;
+       await fs.promises.mkdir(config.dataDir, { recursive: true });
       const tmp = `${FILE}.tmp`;
       await fs.promises.writeFile(tmp, JSON.stringify(db));
       try { await fs.promises.rename(tmp, FILE); }
