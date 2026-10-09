@@ -4,4 +4,5 @@ dist
 web/dist
 .env
 .env.*
-!.env.example
+!.env.examplegit --version
+node_modules
